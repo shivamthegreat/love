@@ -9,25 +9,20 @@
 <body>
     <div class="hearts"></div>
     
-    <div class="container">
-        <h1>Do You Love Me? 💖</h1>
-        <p class="subtitle">Be honest... I can handle the truth! 😘</p>
-        
-        <div class="button-container">
-            <button id="yes-button" class="btn" onclick="clickYesButton()">YES! 💕</button>
-            <button id="no-button" class="btn" onmouseover="hoverNoButton()" onclick="clickNoButton()">NO</button>
-        </div>
-        
-        <div id="message" class="message"></div>
-        
-        <div id="counter" class="counter" style="display: none;">
-            Times you tried to click "NO": <span id="no-count">0</span>
-        </div>
-        
-        <button id="reset-button" class="reset-btn" onclick="resetGame()" style="display: none;">
-            Start Over 🔄
-        </button>
+    <h1>Do You Love Me? 💖</h1>
+    
+    <button id="yes-button" onclick="clickYesButton()">YES! 💕</button>
+    <button id="no-button" onmouseover="hoverNoButton()" onclick="clickNoButton()">NO</button>
+    
+    <div id="message" class="message" style="display: none;"></div>
+    
+    <div id="counter" class="counter" style="display: none;">
+        Times you tried to click "NO": <span id="no-count">0</span>
     </div>
+    
+    <button id="reset-button" class="reset-btn" onclick="resetGame()" style="display: none;">
+        Start Over 🔄
+    </button>
 
     <div id="celebration" class="celebration"></div>
 
